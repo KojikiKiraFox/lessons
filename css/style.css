@@ -5,3 +5,64 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: #f9f9f9;
+}
+
+.content{
+    margin-top: 100px;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.txt-top{
+    text-align: center;
+    margin-bottom: 125px;
+}
+
+.content__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.content__item{
+    position: relative;
+    margin-right: 30px;
+    max-width: 266px;
+    width: 100%;
+    align-items: center;
+}
+
+.content__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.content__img{
+    margin-bottom: 20px;
+}
+
+.info,
+.price{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buy-btn{
+    position: absolute;
+    left: 40px;
+    top: 100%;
+    border: 1px solid #23bac1;
+    color: #23bac1;
+    padding: 20px 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.buy-btn:hover{
+    background: #23bac1;
+    color: #116266;
+}
