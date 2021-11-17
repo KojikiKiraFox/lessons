@@ -4,11 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
-}
-
-a{
-    text-decoration: none;
 }
 
 .container{
@@ -73,4 +68,39 @@ a{
 .btn-buy:hover,
 .btn-info:hover{
     text-decoration: underline;
+}
+
+/* book */
+
+.delivery{
+    background: #f2f2f2;
+    margin-top: 100px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.delivery__text-top{
+    font-style: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.delivery__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery__item{
+    max-width: 260px;
+    width: 100%;
+}
+
+.delivery__img{
+    margin-left: 35%;
+    margin-bottom: 15px;
+}
+
+.delivery__info{
+    text-align: center;
 }
