@@ -16,17 +16,19 @@ a{
     list-style-type: none;
 }
 
-@keyframes raimbol {
-    100%{
-        filter:hue-rotate(360deg);
-    }
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
-.rainbol{
-    animation: raimbol;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 
+input,
+input:active{
+    outline: none;
+    border: none;
 }
+
+
 
 
 .container{
@@ -175,16 +177,20 @@ a{
 .collection__items{
     display: flex;
     justify-content: center;
-    background: #F9F6F1; 
     margin: 0 auto;
 }
 
 .item__collection{
+    background: #F9F6F1; 
     max-width: 550px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.item__collection:nth-child(2){
+    background: #F4F4F4;
 }
 
 .item__collect-top{
@@ -225,12 +231,18 @@ a{
     max-height: 240px;
     width: 100%;
 }
+.dress__item:nth-child(even){
+    background-image: url(../img/items/drugoy-chet.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 
-.dress-img{
+.dress__item:nth-child(odd){
     background-image: url(../img/items/tipa-dress.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 
 .dress__text{
@@ -243,3 +255,210 @@ a{
 
 
 /* collection */
+
+
+/* new__models */
+
+.new__models{
+    margin-top: 150px;
+}
+
+.new-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.new__model-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+
+.new__model-item{
+    background-image: url(../img/icon/ramca.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    max-width: 255px;
+    max-height: 350px;
+    width: 100%;
+}
+
+.new-link{
+    align-items: center;
+}
+
+.new-img{
+    margin-bottom: 25px;
+}
+
+.new-name{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.price-new{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D7B399;
+}
+
+.btn-new{
+    margin-left: 40%;
+}
+
+/* new__models */
+
+
+/* sell__emall */
+
+.sell__emall{
+    margin-top: 150px;
+    background: #212121;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.sell__emall-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sell__emall-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color:#fff;
+    text-align: center;
+}
+
+.input__sell{
+    align-items: center;
+    padding: 10px 10px;
+    margin-right: 35px;
+}
+
+.sell__btn{
+    background:#D7B399;
+    color: #fff;
+    padding: 12px 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+/* sell__emall */
+
+/* footer */
+
+.footer{
+    background: #212121;
+    margin-top: 150px;
+    padding-top: 75px;
+    padding-bottom: 40px;
+}
+
+.footer__logo-text{
+    max-width: 200px;
+    margin-right: 100px;
+}
+
+.footer-nav{
+    max-width: 125px;
+    width: 100%;
+}
+
+.footer-nav:not(last-child){
+    margin-right: 75px;
+}
+
+.footer__menu-top{
+    margin-bottom: 20px;
+}
+
+.footer-menu-item:not(last-child){
+    margin-bottom: 10px;
+}
+
+.footer__menu-link{
+    display: flex;
+}
+
+.footer__text-logo{
+    color: #fff;
+}
+
+
+.footer__link-items{
+    width: 100%;
+    display: flex;
+}
+
+.footer__menu-top{
+    color: #FFFFFF;
+}
+
+.footer__menu-link{
+    color: #CBCFD4;
+    line-height: 22px;
+}
+
+.link__img-footer{
+    margin-right: 5px;
+}
+
+.copyright{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-txt{
+    text-align: left;
+    color: #CBCFD4;
+}
+
+.politic-link{
+    text-align: end;
+    color: #CBCFD4;
+}
+/* footer */
+
+/* decoraty */
+
+.footer a:hover{
+    color: #fff;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    box-shadow: 5px 3px 10px 0 rgb(190, 190, 190);
+}
+
+input:hover,
+.sell__btn:hover{
+    text-decoration: underline;
+    box-shadow: 5px 3px 10px 0 rgb(61, 61, 61);
+}
+
+@keyframes raimbol {
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+
+
+.logo:hover{
+    animation: raimbol;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
