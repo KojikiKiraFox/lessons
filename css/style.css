@@ -38,7 +38,6 @@ a{
 .btn{
     background-color: #D7B399;
     color: #fff;
-    padding: 17px 30px;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -101,6 +100,10 @@ a{
     font-weight: 700;
 }
 
+.btn-hero{
+    padding: 17px 30px;
+}
+
 .photo__item-right{
     position: relative;
 }
@@ -134,6 +137,7 @@ a{
 /* delivery */
 
 .delivery{
+    margin-top: 200px;
     background-color: #212121;
     text-align: center;
 }
@@ -165,3 +169,77 @@ a{
 }
 
 /* Delivery */
+
+/* collection */
+
+.collection__items{
+    display: flex;
+    justify-content: center;
+    background: #F9F6F1; 
+    margin: 0 auto;
+}
+
+.item__collection{
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__collect-top{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.item__collect-bottom{
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.img-collection{
+    margin-top: 80px;
+}
+
+.btn-arrow{
+    padding: 10px 40px;
+    
+}
+
+.dress__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dress__item{
+    max-width: 275px;
+    max-height: 240px;
+    width: 100%;
+}
+
+.dress-img{
+    background-image: url(../img/items/tipa-dress.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.dress__text{
+    padding-top: 215px;
+    padding-left: 30px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+
+/* collection */
