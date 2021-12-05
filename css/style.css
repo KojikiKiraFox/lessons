@@ -14,6 +14,7 @@ li,
 a {
 	text-decoration: none;
 	list-style-type: none;
+	transition: .3s;
 }
 
 button {
@@ -26,6 +27,7 @@ input,
 input:active {
 	outline: none;
 	border: none;
+	transition: .3s;
 }
 
 
@@ -42,9 +44,19 @@ input:active {
 	color: #fff;
 	font-weight: 400;
 	text-transform: uppercase;
+	transition: .3s;
 }
 
 /* header */
+
+.header{
+	background: #F9F6F1;
+}
+
+.header a:hover{
+	color: rgb(161, 161, 161);
+	transition: .3s;
+}
 
 .header-menu {
 	padding-top: 40px;
@@ -83,7 +95,9 @@ input:active {
 /* hero */
 
 .hero {
-	margin-top: 90px;
+	background: #F9F6F1;
+	padding-top: 90px;
+	padding-bottom: 70px;
 }
 
 .hero__item {
@@ -172,7 +186,6 @@ input:active {
 /* delivery */
 
 .delivery {
-	margin-top: 70px;
 	background-color: #212121;
 	text-align: center;
 }
@@ -263,6 +276,11 @@ input:active {
 	max-width: 275px;
 	max-height: 240px;
 	width: 100%;
+	transition: all .3s;
+}
+
+.dress__item:hover{
+	transform: translateY(-10px);
 }
 
 .dress__item:nth-child(even) {
@@ -321,6 +339,11 @@ input:active {
 	max-width: 255px;
 	max-height: 350px;
 	width: 100%;
+transition: .3s;
+}
+
+.new__model-item:hover{
+	transform: translateY(-30px);
 }
 
 .new-link {
@@ -477,12 +500,14 @@ input:active {
 .btn:hover {
 	text-decoration: underline;
 	box-shadow: 5px 3px 10px 0 rgb(190, 190, 190);
+
 }
 
 input:hover,
 .sell__btn:hover {
 	text-decoration: underline;
 	box-shadow: 5px 3px 10px 0 rgb(61, 61, 61);
+
 }
 
 @keyframes raimbol {
@@ -496,4 +521,5 @@ input:hover,
 	animation: raimbol;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	animation-timing-function:linear;
 }
