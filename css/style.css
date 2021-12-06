@@ -76,6 +76,17 @@ input:active {
 	margin-right: 35px;
 }
 
+.btn-burger{
+	max-width: 30px;
+	max-height: 30px;
+	width: 100%;
+	align-items: center;
+}
+
+.menu-burger{
+	display: none;
+}
+
 .pay__header {
 	margin-right: 35px;
 }
@@ -371,7 +382,13 @@ transition: .3s;
 }
 
 .btn-new {
-	margin-left: 40%;
+	max-width: 220px;
+	width: 100%;
+}
+
+.btn__new-model{
+	display: flex;
+	justify-content: center;
 }
 
 /* new__models */
@@ -522,4 +539,151 @@ input:hover,
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-timing-function:linear;
+}
+
+
+@media (max-width: 1100px) {
+	.container{
+		max-width: 90%;
+	}
+
+	.new__model-items{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media (max-width:910px){
+	.sell__emall-title{
+		display: none;
+	}
+
+	.input__sell-items{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.dress__item{
+		margin: 0 auto;
+	}
+
+	.input__sell{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.footer__logo-text,
+	.copyright-txt,
+	.hero__right{
+		display: none;
+	}
+
+	.hero__left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.hero-h2{
+		text-align: center;
+	}
+
+	.politic-link{
+		margin-left: auto;
+	}
+
+	.collection__items{
+		flex-wrap: wrap;
+	}
+
+	.item__collection{
+		margin-top: 30px;
+	}
+
+	.item__collection:last-child{
+		margin-bottom: 30px;
+	}
+
+	.dress__item{
+		margin-bottom: 20px;
+	}
+
+	.new__model-item{
+		margin-bottom: 20px;
+		margin-left: 30px;
+	}
+
+	.footer-nav:last-child{
+		margin-right: 0;
+	}
+
+	.footer-nav:nth-child(3){
+		display: none;
+	}
+
+	.footer__link-items{
+		justify-content: center;
+	}
+
+}
+
+@media (max-width: 700px){
+	.nav__header,
+	.header__menu-right{
+		display: none;
+	}
+
+	.menu-burger{
+		align-items: center;
+		display:block;
+	}
+}
+
+@media (max-width: 610px) {
+	.dress__items{
+		display: none;
+	}
+	
+}
+
+@media (max-width: 560px){
+	.hero-h1{
+		display: none;
+	}
+
+	.delivery{
+		display: none;
+	}
+	.new__model-item{
+		margin-left: 0;
+	}
+}
+
+@media(max-width:405px){
+	.img-collection{
+		display: none;
+	}
+
+	.item__collection{
+		padding-bottom: 20px;
+		padding-top: 10px;
+	}
+
+	.footer-nav:nth-child(4){
+		display: none;
+	}
+
+	.politic-link{
+		margin: 0 auto;
+	}
+
+
 }
