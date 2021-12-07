@@ -16,7 +16,6 @@
 
 a{
     text-decoration: none;
-    text-decoration-style: none;
 }
 
 .container {
@@ -206,7 +205,7 @@ a{
 }
 
 .about__img-text{
-    max-width: 58;
+    max-width: 58px;
     max-height: 58px;
     margin-right: 47px;
 }
@@ -272,7 +271,6 @@ a{
 
 
 .portfolio-img{
-    align-items: left;
     width: 100%;
 }
 
@@ -359,7 +357,6 @@ a{
 .btn__blue-bgc{
     margin-bottom:20px;
     margin-left: 50px;
-    align-items: right;
     background-color: #fff;
 }
 
@@ -504,7 +501,7 @@ a{
 
     .btn__blue-bgc{
         padding-left: 45px;
-        background-position:5 center;
+        background-position:5px center;
     }
 }
 
