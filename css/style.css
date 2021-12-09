@@ -36,6 +36,19 @@ a{
     background-color: #fff;
 }
 
+@keyframes rgvfd {
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.header__logo:hover{
+    animation: rgvfd;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
 .header__nav{
     max-width: 550px;
     width: 100%;
@@ -65,6 +78,14 @@ a{
 .menu-item{
     line-height: 80px;
     color: #1E266D;
+    transition: .3s;
+}
+
+
+.menu__item:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .contacs{
@@ -77,6 +98,14 @@ a{
     margin-right: 35px;
 }
 
+.number-link{
+    transition: .3s;
+}
+
+.number-link:hover{
+    text-decoration: underline;
+}
+
 .btn{
     border:none;
     border-radius: 100px;
@@ -84,6 +113,32 @@ a{
     padding: 8px 30px;
     font-size: 16px;
     line-height: 30px;  
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 2px 5px 0 black;
+}
+
+.btn:active{
+    background: #fff;
+    color: #3751FF;
+}
+
+.btn-blue:active{
+    transition: .1s;
+}
+
+.btn__hero-wite:active,
+.btn__blue-bgc:active{
+    transition: .1s;
+    background: #3751FF;
+    color: white;
+}
+
+.btn__blue-bgc:active{
+    background-position: center;
 }
 
 .btn-blue{
@@ -119,6 +174,8 @@ a{
     margin-bottom: 186px;
     position: relative;
 }
+
+
 
 .hero__items{
     padding-top: 144px;
@@ -165,6 +222,14 @@ a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px ;
+}
+
+.logo__item{
+    transition: .3s;
+}
+
+.logo__item:hover{
+    transform: scale(1.1) translateY(-5px);
 }
 
 
@@ -341,6 +406,11 @@ a{
     line-height: 180%;
     color: #455880;
     text-align: center;
+    transition: .3s;
+}
+
+.other__persona__text-bottom:hover{
+    transform: scale(1.2);
 }
 
 /* others */
@@ -382,6 +452,11 @@ a{
 
 .orange__text{
     color: #FED385;
+    transition: .3s;
+}
+
+.orange__text:hover{
+    text-decoration: underline;
 }
 
 .button__text-bottom{
@@ -430,6 +505,20 @@ a{
     font-size: 18px;
     line-height: 225%;
     color: #455880;
+    transition:.3s;
+}
+
+.footer__nav-item:hover{
+    transform: scale(1.3);
+    font-weight: bold;
+}
+
+.img__social-footer{
+    transition: .3s;
+}
+
+.img__social-footer:hover{
+    transform: translateY(-5px);
 }
 
 .footer__text-logo{
@@ -467,6 +556,13 @@ a{
     line-height: 27px;
     color: #455880;
 }
+
+.footer__item-txt:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
 
 .footer__item-txt:not(:last-child){
     margin-right: 20px;
