@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Halyard;
+    src: url(../fonts/Halyard\ Text\ Regular.ttf);
+}
+
 *,
 *::after,
 *::before{
@@ -8,14 +13,13 @@
     font-size: 16px;
 }
 
-@keyframes raimbol {
-    100%{
-        filter:hue-rotate(360deg);
-    }
+html{
+    font-family: Halyard;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .container {
